@@ -75,3 +75,17 @@ nav > h1{
     display: flex;
     justify-content: center;
 }
+
+#listaCartas{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #4dc8e7;
+    margin-left: 90px;
+
+}
+
+#carouselExampleAutoplaying{
+    width: 500px;
+    height: 380px;
+    margin-left: 400px;
+}

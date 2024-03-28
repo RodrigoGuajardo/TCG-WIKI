@@ -10,7 +10,7 @@ body{
 }
 #Titulo{
     font-weight: bolder;
-    color: #4dc8e7;
+    color: white;
     display: flex;
     justify-content: center;
 
@@ -19,14 +19,12 @@ body{
 nav > h1{
     display: flex;
     justify-content: center;
-    color: #4dc8e7;
-    font-weight: bolder;
+    color: white;
 }
 
 #a1{
     font-size: 1.5rem;
-    font-weight: bolder;
-    color: #4dc8e7;
+    color: white;
     margin: 60px;
     display: flex;
     justify-content: center;
@@ -35,9 +33,9 @@ nav > h1{
 
 #a2{
     
-    font-weight: bolder;
+    
     font-size: 1.5rem;
-    color: #4dc8e7;
+    color: white;
     margin: 60px;
     display: flex;
     justify-content: center;
@@ -46,8 +44,7 @@ nav > h1{
 #t1{
     
     font-size: 1.5rem;
-    font-weight: bolder;
-    color: #4dc8e7;
+    color: white;
     margin: 60 px;
     display: flex;
     justify-content: center;
@@ -55,17 +52,15 @@ nav > h1{
 
 #t2{
     font-size: 1.5rem;
-    font-weight: bolder;
-    color: #4dc8e7;
+    color: white;
     margin: 60px;
     display: flex;
     justify-content: center;
 }
 
 #listaCartas{
-    font-weight: bolder;
     font-size: 1.5rem;
-    color: #4dc8e7;
+    color: white;
     margin-left: 90px;
 
 }
@@ -74,4 +69,61 @@ nav > h1{
     width: 500px;
     height: 380px;
     margin-left: 400px;
+}
+
+#titulo2{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#s1{
+
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+#s2{
+
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+#s3{
+
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+#s4{
+
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+}
+#v1{
+    margin: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#v2{
+    margin: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#v3{
+    margin: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
 }

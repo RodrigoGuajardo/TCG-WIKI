@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('fondo\ pagina\ \(1\).png');
+    background-image: url('fondo\ oagina\(3\).webp');
     color:black;
 
 }
@@ -15,21 +15,7 @@ body{
     justify-content: center;
 
 }
-#banner{
-    background-image: url('fondo\ pagina\ \(1\).png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;    
-    flex-direction: column;
-    margin: 0;
-    
-    
-    
-}
+
 nav > h1{
     display: flex;
     justify-content: center;

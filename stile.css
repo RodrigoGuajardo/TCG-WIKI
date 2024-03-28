@@ -3,7 +3,18 @@
     font-family: "PT Serif";
 }
 
+body{
+    background-image: url('fondo\ pagina\ \(1\).png');
+    color:black;
 
+}
+#Titulo{
+    font-weight: bolder;
+    color: #4dc8e7;
+    display: flex;
+    justify-content: center;
+
+}
 #banner{
     background-image: url('fondo\ pagina\ \(1\).png');
     background-size: cover;
@@ -19,26 +30,48 @@
     
     
 }
-
-#titulo{
-    font-size: 4rem;
-    font-weight: bolder;
-    color: #09013a;
-    margin-right: 60px;
+nav > h1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    color: #4dc8e7;
+    font-weight: bolder;
 }
 
-#boton{
+#a1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #4dc8e7;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#a2{
     
     font-weight: bolder;
-    font-size: 4rem;
-    color: #09013a;
-    margin-right: 60px;
+    font-size: 1.5rem;
+    color: #4dc8e7;
+    margin: 60px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
+#t1{
+    
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #4dc8e7;
+    margin: 60 px;
+    display: flex;
+    justify-content: center;
+}
+
+#t2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #4dc8e7;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}

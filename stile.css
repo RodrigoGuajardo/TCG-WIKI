@@ -2,9 +2,24 @@
 
 
 
-#CarouselTCG{
-
+#titulo{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #09013a;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    height: 40vh;
+}
 
+#boton{
+    
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #09013a;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

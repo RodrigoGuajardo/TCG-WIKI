@@ -151,6 +151,7 @@ nav > h1{
     margin: 60px;
 }
 #q1{
+    font-weight: bolders;
     color: white;
     display: flex;
     justify-content: center;

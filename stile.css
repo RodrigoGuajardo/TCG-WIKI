@@ -127,3 +127,31 @@ nav > h1{
     display: flex;
     justify-content: center;
 }
+#vy1{
+    margin: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+#vy2{
+    margin: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#x1{
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+}
+#x2{
+    font-size: 1.5rem;
+    color: white;
+    margin: 60px;
+}
+#q1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}

@@ -6,7 +6,9 @@
 body{
     background-image: url('asdas.gif');
     color:black;
-
+    background-size: contain;
+    
+    
 }
 #Titulo{
     font-weight: bolder;
@@ -80,75 +82,75 @@ nav > h1{
 
 #s1{
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
     display: flex;
     justify-content: center;
 }
 #s2{
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
     display: flex;
     justify-content: center;
 }
 #s3{
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
     display: flex;
     justify-content: center;
 }
 #s4{
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
 }
 #v1{
-    margin: 200px;
-    height: 500px;
+    margin: 270px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
 
 #v2{
-    margin: 200px;
-    height: 500px;
+    margin: 270px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
 #v3{
-    margin: 200px;
-    height: 500px;
+    margin: 270px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
 #vy1{
-    margin: 200px;
-    height: 500px;
+    margin: 270px;
+    height: 400px;
     display: flex;
     justify-content: center;
 
 }
 #vy2{
-    margin: 200px;
-    height: 500px;
+    margin: 270px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
 #x1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
 }
 #x2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
 }
 #q1{
     font-weight: bolders;

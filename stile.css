@@ -25,37 +25,40 @@ nav > h1{
 }
 
 #a1{
-    font-size: 1.5rem;
+
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    
 }
 
 #a2{
     
-    
-    font-size: 1.5rem;
+
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 250px;
     display: flex;
     justify-content: center;
 }
 
 #t1{
     
-    font-size: 1.5rem;
+
+    font-size: 1.4rem;
     color: white;
-    margin: 60 px;
+    margin: 270px;
     display: flex;
     justify-content: center;
 }
 
 #t2{
-    font-size: 1.5rem;
+
+    font-size: 1.4rem;
     color: white;
-    margin: 60px;
+    margin: 270px;
     display: flex;
     justify-content: center;
 }
@@ -63,7 +66,7 @@ nav > h1{
 #listaCartas{
     font-size: 1.5rem;
     color: white;
-    margin-left: 90px;
+    margin-left: 400px;
 
 }
 

@@ -76,7 +76,7 @@ nav > h1{
     margin-left: 400px;
 }
 
-#titulo2{
+#TP{
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -169,4 +169,30 @@ nav > h1{
 
 #cardMYL1{
     margin: 250px;
+}
+
+#img1{
+    height: 250px;
+    width: 250px;
+    margin-left: 100px ;
+}
+#B1{
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+#c1{
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+
+}
+#e1{
+    margin-left: 250px;
+    font-size: 1.4rem;
+    color: white;
+    
 }

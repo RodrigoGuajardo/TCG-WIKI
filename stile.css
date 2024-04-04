@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('asdas.gif');
+    background-image: url('Images/Fondo\ Animado.gif');
     color:black;
     background-size: contain;
     
@@ -165,4 +165,8 @@ nav > h1{
 #carrocompras{
     height: 25px;
     width: 25px;
+}
+
+#cardMYL1{
+    margin: 250px;
 }

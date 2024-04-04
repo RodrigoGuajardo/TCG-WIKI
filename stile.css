@@ -161,3 +161,8 @@ nav > h1{
     display: flex;
     justify-content: center;
 }
+
+#carrocompras{
+    height: 25px;
+    width: 25px;
+}

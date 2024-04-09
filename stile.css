@@ -166,10 +166,12 @@ nav > h1{
 }
 
 #cardMYL1{
+    margin-top: 40px;
     margin: 250px;
     background-color: #6D00AC;
 }
 #cardMYL2{
+    margin-top: 40px;
     margin-left: 250px;
     background-color: #6D00AC;
    
@@ -208,4 +210,11 @@ nav > h1{
 #logo{
     height: 30px;
     width: 30px;
+}
+
+#cartareparar{
+    margin-left: 70px;
+    height: 161px;
+    width: 160px;
+
 }

@@ -7,7 +7,7 @@ body{
     background-image: url('Images/R.jpg');
     background-attachment: fixed;
     color:black;
-    background-size: contain;
+    background-size:cover;
     
     
 }

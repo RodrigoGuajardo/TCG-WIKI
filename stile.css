@@ -218,3 +218,16 @@ nav > h1{
     width: 160px;
 
 }
+#field{
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+#f1{
+    color: white;
+}
+#msg{
+    display: flex;
+    justify-content: center;
+
+}

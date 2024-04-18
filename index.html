@@ -94,28 +94,35 @@
     <h3 id="TP">Encuesta</h3>
     
   
-    <div id="e1">
-      <p>Nombre :</p>
-      <input type="text" id="name" name="user_name" />
-      
-    
-      <p>Correo Electronico :</p>
-      <input type="email" id="mail" name="user_mail" />
-    
-      <p>Que Opinas de la pagina :</p>
-      <textarea id="msg" name="user_message"></textarea>
-      
-      <p>Que Añadirias :</p>
-      <textarea id="msg" name="user_message"></textarea>
-      
-      <p>Volverias a usarla :</p>
-      <textarea id="msg" name="user_message"></textarea>
-      
-      
-    </div>
-    <button id="e1" type="button" class="btn btn-primary">Enviar</button>
-    
-
+    <fieldset id="field">
+      <form action="procesar.php" name="comentarios">
+        <legend id="f1">Comentarios</legend>
+        <div id="e1">
+          <p>Nombre :</p>
+          <input type="text" id="name" name="user_name" />
+          
+        
+          <p>Correo Electronico :</p>
+          <input type="email" id="mail" name="user_mail" />
+        
+          <p>Que Opinas de la pagina :</p>
+          <textarea cols="50" rows="5" id="msg" name="user_message"></textarea>
+          
+          <p>Que Añadirias :</p>
+          <textarea cols="50" rows="5" id="msg" name="user_message"></textarea>
+          
+          <p>Volverias a usarla :</p>
+          <select name="usarlaotravez" id="f1">
+            <option value="1">Si</option>
+            <option value="2">No</option>
+            <option value="3">Tal vez</option>
+  
+          </select>
+          
+        </div>
+        <button id="e1" type="button" class="btn btn-primary">Enviar</button>
+      </form>
+    </fieldset>
 
     
     <div class="container-fluid"></div>

@@ -198,9 +198,14 @@ nav > h1{
 }
 #e1{
     margin-left: 250px;
+
     font-size: 1.4rem;
-    color: white;
     
+    
+}
+#l1{
+    color: white;
+    font-size: 1.5rem;
 }
 #z1{
     color: white;
@@ -230,4 +235,11 @@ nav > h1{
     display: flex;
     justify-content: center;
 
+}
+#password{
+    margin-left: 120px;
+
+}
+#mail{
+    margin-left: 50px;
 }

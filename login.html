@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Secion</title>
+    <link rel="stylesheet" href="stile.css">
 </head>
 <body>
     
     <fieldset id="field">
-        <form action="procesar.php" name="comentarios">
-          <legend id="f1">Comentarios</legend>
-          <div id="e1">
+        <form action="#" name="comentarios">
+          <legend id="l1">Inicio Secion</legend>
+        
             
           
-            <p>Correo Electronico :</p>
-            <input type="email" id="mail" name="user_mail" />
-            <p>Contraseña :</p>
-            <input type="password" id="name" name="user_name" />
-            
+            <label id="l1" for="usuario">Correo Electronico :</label>
+            <input type="email" id="mail" name="user_mail" class="form-control"/>
+            <br>
+            <label id="l1" for="Contraseña : ">Contraseña :</label>
+            <input type="password" id="password" name="user_name" class="form-control" />
+            <br>
+            <br>
+            <button id="e1" type="button" class="btn btn-primary">Iniciar Secion</button>
 
-
-
-          </div>
-          <button id="e1" type="button" class="btn btn-primary">Iniciar Secion</button>
         </form>
       </fieldset>
 </body>

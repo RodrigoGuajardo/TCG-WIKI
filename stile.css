@@ -243,3 +243,11 @@ nav > h1{
 #mail{
     margin-left: 50px;
 }
+
+.correct{
+    border:3px #239700 solid !important;
+    
+}
+.incorrect{
+    border: 3px red solid !important;
+}

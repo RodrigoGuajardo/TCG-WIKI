@@ -29,3 +29,34 @@ function validarPass(){
     }
 
 }
+function validarPass(){
+    let clave = document.querySelector("#clave");
+    if(clave.value.length > 5 && clave.value.length <13){
+        clave.classList.add("correcto");
+        clave.classList.remove("incorrecto");
+        document.querySelector("#error-clave").innerHTML = "&nbsp;";
+    }else{
+        clave.classList.add("incorrecto");
+        clave.classList.remove("correcto");
+        document.querySelector("#error-clave").innerHTML = "error, ingrese 6 y 12 caracteres.";
+
+    }
+
+}
+
+function validarFormulario(){
+    let inputs = document.querySelectorAll("input");
+    let correctos = true;
+    inputs.forEach(element => {
+        if(element.classList.contains("incorrecto")){
+            correctos = false
+        }
+        
+    });
+    if(correctos){
+        document.querySelector("form").submit();
+    }else{
+        document.querySelector("#error-form").innerHTML = "error, revise los campos";
+
+    }
+}

@@ -14,3 +14,18 @@ function validarUser(){
 
 
 }
+
+function validarPass(){
+    let clave = document.querySelector("#clave");
+    if(clave.value.length > 5 && clave.value.length <11){
+        clave.classList.add("correcto");
+        clave.classList.remove("incorrecto");
+        document.querySelector("#error-clave").innerHTML = "&nbsp;";
+    }else{
+        clave.classList.add("incorrecto");
+        clave.classList.remove("correcto");
+        document.querySelector("#error-clave").innerHTML = "error, ingrese 6 y 12 caracteres.";
+
+    }
+
+}

@@ -1,4 +1,4 @@
-function validarUser(){
+function validarMail(){
     let user = document.querySelector("#user")
     if(user.value.length >= 6){
         user.classList.add("correct");
@@ -17,28 +17,28 @@ function validarUser(){
 
 function validarPass(){
     let clave = document.querySelector("#clave");
-    if(clave.value.length > 5 && clave.value.length <11){
+    if(clave.value.length > 5 && clave.value.length <= 12){
         clave.classList.add("correct");
         clave.classList.remove("incorrect");
         document.querySelector("#error-clave").innerHTML = "&nbsp;";
     }else{
         clave.classList.add("incorrect");
         clave.classList.remove("correct");
-        document.querySelector("#error-clave").innerHTML = "error, ingrese 6 y 12 caracteres.";
+        document.querySelector("#error-clave").innerHTML = "error, ingrese entre 6 y 12 caracteres.";
 
     }
 
 }
 function validarPass(){
     let clave = document.querySelector("#clave");
-    if(clave.value.length > 5 && clave.value.length <13){
+    if(clave.value.length > 5 && clave.value.length <= 12){
         clave.classList.add("correcto");
         clave.classList.remove("incorrecto");
         document.querySelector("#error-clave").innerHTML = "&nbsp;";
     }else{
         clave.classList.add("incorrecto");
         clave.classList.remove("correcto");
-        document.querySelector("#error-clave").innerHTML = "error, ingrese 6 y 12 caracteres.";
+        document.querySelector("#error-clave").innerHTML = "error, ingrese entre 6 y 12 caracteres.";
 
     }
 

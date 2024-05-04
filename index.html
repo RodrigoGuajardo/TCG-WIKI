@@ -91,22 +91,22 @@
   
     <fieldset id="field">
       <form action="procesar.php" name="comentarios">
-        <legend id="f1">Comentarios</legend>
+        <legend id="o1">Comentarios</legend>
         <div id="e1">
-          <p>Nombre :</p>
+          <p id="g1">Nombre :</p>
           <input type="text" id="name" name="user_name" />
           
         
-          <p>Correo Electronico :</p>
+          <p id="g1">Correo Electronico :</p>
           <input type="email" id="mail" name="user_mail" />
         
-          <p>Que Opinas de la pagina :</p>
+          <p id="g1">Que Opinas de la pagina :</p>
           <textarea cols="50" rows="5" id="msg" name="user_message"></textarea>
           
-          <p>Que Añadirias :</p>
+          <p id="g1">Que Añadirias :</p>
           <textarea cols="50" rows="5" id="msg" name="user_message"></textarea>
           
-          <p>Volverias a usarla :</p>
+          <p id="g1">Volverias a usarla :</p>
           <select name="usarlaotravez" id="f1">
             <option value="1">Si</option>
             <option value="2">No</option>
@@ -118,30 +118,11 @@
         <button id="e1" type="button" class="btn btn-primary">Enviar</button>
       </form>
     </fieldset>
-    <div class="contenedor">
-      <h1>Inicio de sesión</h1>
-      <form action="#">
-        <div class="contenedor">
-          <h1>Inicio de sesión</h1>
-          <form action="#">
-              <div class="form-group">
-                  <label for="usuario">Usuario</label>
-                  <input type="text" name="usuario" id="user" class="form-control incorrecto" onkeyup="validarUser()">
-                  <p id="error-user" class="texto-error">error, ingrese 6 caracteres minimo.</p>
-              </div>
-              <div class="form-group">
-                  <label for="clave">Contraseña</label>
-                  <input type="password" name="clave" id="clave" class="form-control incorrecto" onkeyup="validarPass()">
-                  <p id="error_clave" class="texto-error">error, ingrese 6 y 12 caracteres.</p>
-              </div>
-              <a href="#">Olvide mi contraseña</a>
-              <div class="d-grid gap-2">
-                  <button type="button" class="btn btn-primary" onclick="validarFormulario()" >Enviar</button>
-              </div>
-              <p id="error-form" class="texto-error">&nbsp;</p>
-          </form>
-      </div>
+    
+      
+        
     <div class="container-fluid"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    
+  </body>
 </html>

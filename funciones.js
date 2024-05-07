@@ -50,6 +50,60 @@ function validarFormulario() {
 
 
 
+let cartasPoke = [
+    {
+        "nombre":"V-Batle deck Victini",
+        "precio":"24990",
+        "imagen":"Images/mazo pokemon.png"
+
+    },
+    {
+        "nombre":"V-Batle deck Gardevoir",
+        "precio":"24990",
+        "imagen":"Images/mazo gardevoir.png"
+    },
+    {
+        "nombre":"V-Batle deck Victini & Gardevoir",
+        "precio":"61990",
+        "imagen":"Images/pack pokemon victini y gardevoir.png"
+
+    },
+    {
+        "nombre":"Caja Pokemon 151 Ultra-Premium Collection",
+        "precio":"149990",
+        "imagen":"Images/caja pokemon 151.png"
+    }
+
+
+]
+
+function cargarPOKE(){
+    fetch('https://mindicador.cl/api').then(function(response) {
+        return response.json();
+    }).then(function(dailyIndicators) {
+        let dolar = parseFloat(dailyIndicators.dolar.valor);
+        let productos = document.querySelector("#productosPOKE");
+        for(let item of cartasPoke){
+            let producto = document.createElement("div");
+            producto.classList.add("producto");
+            let imagen = document.createElement("div");
+            imagen.classList.add("imagen");
+            imagen.style.backgroundImage = 'url('+ item.imagen +')';
+            producto.appendChild(imagen);
+            let nombre = document.createElement("div");
+            nombre.classList.add("nombre");
+            nombre.innerHTML = item.nombre;
+            producto.appendChild(nombre);
+            let precio = document.createElement("div");
+            precio.classList.add("precio");
+            precio.innerHTML = "$"+item.precio + " (USD "+ (item.precio/dolar).toFixed(1) +")";
+            producto.appendChild(precio);
+            productos.appendChild(producto);
+        }
+    }).catch(function(error) {
+        console.log('Requestfailed', error);
+    });
+}
 
 
 let cartasMYL = [

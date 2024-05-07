@@ -80,7 +80,10 @@ nav > h1{
     height: 380px;
     margin-left: 400px;
 }
+#estetico{
+    margin-left: 1000px;
 
+}
 #TP{
     font-weight: bold;
     margin: 120px;
@@ -94,8 +97,8 @@ nav > h1{
 
     font-size: 1.4rem;
     color: white;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     justify-content: center;
 }
@@ -128,19 +131,7 @@ nav > h1{
     margin-bottom: 5%;
     width: 55%;
 }
-#vy1{
-    margin: 270px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
 
-}
-#vy2{
-    margin: 270px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-}
 #x1{
     font-size: 1.4rem;
     color: white;
@@ -163,8 +154,8 @@ nav > h1{
     background-color: #6D00AC;
 }
 #cardMYL2{
-    margin-top: 40px;
-    margin-left: 250px;
+    margin-top: 5%;
+    margin-left: 75%;
     background-color: #6D00AC;
    
 }
@@ -256,5 +247,5 @@ nav > h1{
     text-align: right;
 }
 #link-barra{
-    margin-left: 970px;
+    margin-left: 100vh;
 }

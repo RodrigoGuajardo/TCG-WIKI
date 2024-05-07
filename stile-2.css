@@ -17,6 +17,13 @@ body {
     width: 40%;
 }
 
+#login{
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-right: 25%;
+    
+}
+
 form {
     display: flex;
     flex-direction: column;

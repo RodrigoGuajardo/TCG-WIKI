@@ -55,9 +55,24 @@ function validarFormulario() {
 let cartasMYL = [
     {
         "nombre":"Sobre Mitos y Leyendas Furia",
-        "precio":"20000",
+        "precio":"2000",
         "imagen":"Images/sobre 11 cartas myl.png"
 
+    },
+    {
+        "nombre":"Caja sobres Furia x24",
+        "precio":"30000",
+        "imagen":"Images/caja 24 sobres myl f.png"
+    },
+    {
+        "nombre":"Caja sobre Primer Bloque x24",
+        "precio":"35000",
+        "imagen":"Images/caja sobre primer bloque.webp"
+    },
+    {
+        "nombre":"Mqzo Dinastia del Dragon",
+        "precio":"14990",
+        "imagen":"Images/Mazo-dinastia-del-dragon_1024x1024@2x.webp"
     }
 
 ]

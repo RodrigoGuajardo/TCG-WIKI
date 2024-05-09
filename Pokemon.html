@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="stile.css">
     <script src="funciones.js"></script>
 </head>
-<body onload="cargarPOKE">
+<body onload="cargarPOKE()">
   <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -33,17 +33,22 @@
                   <li><a class="dropdown-item" href="YuGiOh.html">Yu-Gi-Oh</a></li>
                   <li><a class="dropdown-item" href="Magic-Gathering.html">Magic the Gathering</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Extras</a></li>
+                  <li><a class="dropdown-item" href="LoL.html">Extras</a></li>
                 </ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="login.html">Iniciar Secion</a>
+                </li>
                 <li class="nav-item">
                   <a id="link-barra" class="nav-link" href="carrito.html"><img id="carrocompras" src="Images/carritocompras.png" alt="Carrito de compras png"></a>
                 </li>
+              </ul>
           </div>
         </div>
       </nav>
     </nav>
+        
     
-    <h1 id="TP"><img src="Images/800px-Pokémon_TCG_logo.png" alt=""></h1>
+    <h1 id="TP"><img id="logo1" src="Images/800px-Pokémon_TCG_logo.png" alt=""></h1>
 
     <p id="s1">El Juego de Cartas Coleccionables Pokémon (conocido como JCC Pokémon en español , Pokémon TCG inglés y ポケモンカードゲーム en japonés)
        es un emocionante juego desarrollado por Pokémon y Nintendo. Se lanzó por primera vez en Japón el 20 de octubre de 1996 
@@ -54,52 +59,6 @@
 
       </section>
       
-      
-      <div class="row">
-        <div class="col-sm-4 mb-4 mb-sm-0">
-          <div id="cardMYL2" class="card" style="width: 18rem;">
-            <img id="cartareparar" src="Images/mazo pokemon.png" class="card-img-top" alt="mazo victini pokemon tcg">
-            <div class="card-body">
-              <h5 id="z1" class="card-title">Mazo Victiny V-Battle-Deck</h5>
-              <p id="z1" class="card-text">Mazo de pokemon basado en victini y pokemon tipo fuego es parte de un conjunto con gardevoir pero tambien se pueden comprar por separado.<br><button type="button" class="btn btn-warning">Precio : $19990</button></p>
-              <a id="z1" href="#" class="btn btn-primary">Añadir al carro.</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div id="cardMYL2" class="card" style="width: 18rem;">
-            <img id="cartareparar" src="Images/mazo gardevoir.png" class="card-img-top" alt="mazo gardevoir pokemon tcg">
-            <div class="card-body">
-              <h5 id="z1" class="card-title">Mazo Gardevoir V-Battle-Deck</h5>
-              <p id="z1" class="card-text">Mazo de pokemon basado en Gardevoir y pokemon tipo psiquico es parte de un conjunto con victini pero tambien se pueden comprar por separado.<br><button type="button" class="btn btn-warning">Precio : $19990</button></p>
-              <a id="z1" href="#" class="btn btn-primary">Añadir al carro.</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 mb-4 mb-sm-0">
-          <div id="cardMYL2" class="card" style="width: 18rem;">
-            <img id="cartareparar" src="Images/pack pokemon victini y gardevoir.png" class="card-img-top" alt="pack victiny y gardevoir pokeonn tcg">
-            <div class="card-body">
-              <h5 id="z1" class="card-title">Pack de 2 mazos Victiny Y Gardevoir V-Battle-Deck</h5>
-              <p id="z1" class="card-text">Pack de 2 mazos de pokemon que so el de Victiny y Gardevoir que usan pokemon de tipo fuego y psiquico respectivamente.<br><button type="button" class="btn btn-warning">Precio : $30000</button></p>
-              <a id="z1" href="#" class="btn btn-primary">Añadir al carro.</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div id="cardMYL2" class="card" style="width: 18rem;">
-            <img id="cartareparar" src="Images/caja pokemon 151.png" class="card-img-top" alt="mazo gardevoir pokemon tcg">
-            <div class="card-body">
-              <h5 id="z1" class="card-title">Caja Pokemon 151 Ultra-Premium Collection</h5>
-              <p id="z1" class="card-text">Caja pokemon 151 edicion coleccion que contiene objetos extra.<br><button type="button" class="btn btn-warning">Precio : $140000</button></p>
-              <a id="z1" href="#" class="btn btn-primary">Añadir al carro.</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    <img src="cartas magic.png" alt="">
 
 
 

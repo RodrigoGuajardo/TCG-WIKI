@@ -205,3 +205,63 @@ function cargarMTG(){
         console.log('Requestfailed', error);
     });
 }
+
+
+
+let articulosYugi = [
+    {
+        "nombre":"Mazo estructura Yugi Muto",
+        "precio":14990,
+        "imagen":"Images/mazo estructura yugi.png"
+    },
+    {
+        "nombre":"Caja sobres x24 Yu-Gi-Oh",
+        "precio":34990,
+        "imagen":"Images/caja sobre yugi.png"
+    },
+    {
+        "nombre":"Mazo Dragon balnco de ojos azules",
+        "precio":99990,
+        "imagen":"Images/mazo dragon blanco.png"
+    },
+    {
+        "nombre":"Sobre Yu-Gi-Oh",
+        "precio":3990,
+        "imagen":"Images/sobre yu gi oh.pngg"
+    }
+    
+]
+
+
+
+function cargarYugi(){
+    fetch('https://mindicador.cl/api').then(function(response) {
+        return response.json();
+    }).then(function(dailyIndicators) {
+        let dolar = parseFloat(dailyIndicators.dolar.valor);
+        let productos = document.querySelector("#cartasYugi");
+        for(let item of articulosYugi){
+            let producto = document.createElement("div");
+            producto.classList.add("producto");
+
+            let imagen = document.createElement("div");
+            imagen.classList.add("imagen");
+            imagen.style.backgroundImage = 'url('+ item.imagen +')';
+            producto.appendChild(imagen);
+
+            let nombre = document.createElement("div");
+            nombre.classList.add("nombre");
+            nombre.innerHTML = item.nombre;
+            producto.appendChild(nombre);
+
+            let precio = document.createElement("div");
+            precio.classList.add("precio");
+            precio.innerHTML = "$"+item.precio + " (USD "+ (item.precio/dolar).toFixed(1) +")";
+            producto.appendChild(precio);
+
+            productos.appendChild(producto);
+        }
+    }).catch(function(error) {
+        console.log('Requestfailed', error);
+    });
+}

@@ -287,6 +287,15 @@ nav > h1{
     justify-content: space-evenly;
     row-gap: 3vh;
 }
+#cartasYugi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 10%;
+    margin: 0px 10%;
+    justify-content: space-evenly;
+    row-gap: 3vh;
+}
 #productosPOKE{
     display: flex;
     flex-wrap: wrap;

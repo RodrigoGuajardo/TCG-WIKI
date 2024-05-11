@@ -1,3 +1,5 @@
+
+
 function validarUser() {
     let user = document.querySelector("#user");
     if (user.value.length >= 6) {

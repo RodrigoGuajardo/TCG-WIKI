@@ -45,7 +45,22 @@ function validarFormulario() {
     }
 }
 
-
+function validarFormularioIndex() {
+    let inputs = document.querySelectorAll("input");
+    let correctos = true;
+    inputs.forEach(element => {
+        if (element.classList.contains("incorrect")) {
+            correctos = false
+        }
+    });
+    if (correctos) {
+        document.querySelector("form").submit();
+        
+    } else {
+        document.querySelector("#error-form")
+            .innerHTML = "Error, revise los campos.";
+    }
+}
 
 
 
@@ -56,24 +71,24 @@ let cartasPoke = [
     {
         "nombre":"V-Batle deck Victini",
         "precio":"24990",
-        "imagen":"Images/mazo pokemon.png"
+        "imagen":"Images/mazo-pokemon.webp"
 
     },
     {
         "nombre":"V-Batle deck Gardevoir",
         "precio":"24990",
-        "imagen":"Images/mazo gardevoir.png"
+        "imagen":"Images/mazo-gardevoir.webp"
     },
     {
         "nombre":"V-Batle deck Victini & Gardevoir",
         "precio":"61990",
-        "imagen":"Images/pack pokemon victini y gardevoir.png"
+        "imagen":"Images/pack-pokemon-victini-y-gardevoir.webp"
 
     },
     {
         "nombre":"Caja Pokemon 151 Ultra-Premium Collection",
         "precio":"149990",
-        "imagen":"Images/caja pokemon 151.png"
+        "imagen":"https://thirdimpact.cl/wp-content/uploads/2023/06/PokemonScarletViolet151UltraPremiumCollection-510x360.pngs"
     }
 
 
@@ -112,13 +127,13 @@ let cartasMYL = [
     {
         "nombre":"Sobre Mitos y Leyendas Furia",
         "precio":"2000",
-        "imagen":"Images/sobre 11 cartas myl.png"
+        "imagen":"Images/sobre-11-cartas-myl.webp"
 
     },
     {
         "nombre":"Caja sobres Furia x24",
         "precio":"30000",
-        "imagen":"Images/caja 24 sobres myl f.png"
+        "imagen":"Images/caja-24-sobres-myl-f.webp"
     },
     {
         "nombre":"Caja sobre Primer Bloque x24",
@@ -171,8 +186,8 @@ let items = [
     {
         "nombre":"MTG Mazo Inicial Commander - Triunfo de las Fichas",
         "precio":27990,
-        "imagen":"Images/mazo inicial commander.png"
-    },
+        "imagen":"https://www.entrejuegos.cl/13905-home_default/mtg-mazo-inicial-de-commander-encarnacion-del-caos-ingles.jpg"
+    }
     
 ]
 
@@ -214,22 +229,22 @@ let articulosYugi = [
     {
         "nombre":"Mazo estructura Yugi Muto",
         "precio":14990,
-        "imagen":"Images/mazo estructura yugi.png"
+        "imagen":"Images/mazo-estructura-yugi.webp"
     },
     {
         "nombre":"Caja sobres x24 Yu-Gi-Oh",
         "precio":34990,
-        "imagen":"Images/caja sobre yugi.png"
+        "imagen":"Images/caja-sobre-yugi.webp"
     },
     {
         "nombre":"Mazo Dragon balnco de ojos azules",
         "precio":99990,
-        "imagen":"Images/mazo dragon blanco.png"
+        "imagen":"Images/mazo-dragon-blanco.webp"
     },
     {
         "nombre":"Sobre Yu-Gi-Oh",
         "precio":3990,
-        "imagen":"Images/sobre yu gi oh.pngg"
+        "imagen":"Images/sobre-yu-gi-oh.webp"
     }
     
 ]

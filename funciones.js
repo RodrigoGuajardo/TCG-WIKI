@@ -58,7 +58,7 @@ function validarFormularioIndex() {
         
     } else {
         document.querySelector("#error-form")
-            .innerHTML = "Error, revise los campos.";
+            .innerHTML = "Error, los campos no pueden estar vacios.";
     }
 }
 

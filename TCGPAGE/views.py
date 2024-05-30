@@ -13,7 +13,6 @@ def yugi(request):
     return render(request,'TCGPAGE/YuGiOh.html')
 
 def poke(request):
-    pokemon = Productos.objects.all()
     return render(request,'TCGPAGE/Pokemon.html')
 
 

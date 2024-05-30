@@ -1,0 +1,50 @@
+{% extends 'TCGPAGE/base.html' %} 
+{% load static%}
+
+{% block head %}
+{% static 'funciones.js' %}
+{% endblock %}
+
+{% block content %}
+        
+        <h1 id="TP">Carrito</h1>
+        <p id="a1">Productos en el Carro : </p>
+        
+        
+        <fieldset id="field">
+          
+            <div id="c1" class="p-2"><img id="img1" src="Images/Mazo-dinastia-del-dragon_1024x1024@2x.webp" alt="mazo dragon myl">Mazo dinastia del  Dragon.<br>Precio : $7.000</div>  
+          
+            <div id="c1" class="p-2"><img id="img1" src="Images/caja 24 sobres myl f.png" alt="caja spbre x24 furia">Caja sobre MyL Furia x24 <br>Precio : $30000</div>
+          
+            <div id="c1" class="p-2"><img id="img1" src="Images/mazo estructura yugi.png" alt="mazo yugi">Mazo estructura Yu Gi Muto <br>Precio : $16990</div>
+            <div id="a1">Total a Pagar : $53990</div>
+        </fieldset>
+
+        <!-- Button trigger modal -->
+<button id="B1" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Eliminar Productos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Productos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Todos Los productos seran eliminados del carrito <br> ¿Deseas Continuar?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button id="B1" type="button" class="btn btn-primary">Ir a Pagar</button>
+    <div class="container-fluid"></div>
+    
+{% endblock %}

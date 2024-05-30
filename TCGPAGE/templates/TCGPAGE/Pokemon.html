@@ -1,0 +1,51 @@
+{% extends 'TCGPAGE/base.html' %} 
+{% load static%}
+
+{% block head %}
+{% static 'funciones.js' %}
+{% endblock %}
+
+{% block content %}
+        
+    
+    <h1 id="TP"><img id="logo1" src="{% static 'Images/800px-Pokémon_TCG_logo.png' %}" alt=""></h1>
+
+    <p id="s1">El Juego de Cartas Coleccionables Pokémon (conocido como JCC Pokémon en español , Pokémon TCG inglés y ポケモンカードゲーム en japonés)
+       es un emocionante juego desarrollado por Pokémon y Nintendo. Se lanzó por primera vez en Japón el 20 de octubre de 1996 
+       y fue publicado por Media Factory. A lo largo de su historia, ha sido traducido y distribuido por diferentes entidades,
+        como Wizards of the Coast y The Pokémon Company.<br><br>A continuacion algunos productos que vendemos : </p>
+
+      <section id="productosPOKE">
+        {% for pokecarta in productospoke %}
+        <div class="pokemon" style="width: 18rem;">
+          <img src="{{pokecarta.imagen}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Carta 1</h5>
+            <p class="card-text">texto innesesario.</p>
+            <a href="#" class="btn btn-primary">{{pokecarta.precio}}</a>
+          </div>
+        </div>
+
+        {% endfor %}
+      </section>
+      
+
+
+
+    <p id="s4">A continuacion una serie de videos que enseñan a jugar,<br> los creadores de estos videos son los chicos de <a href="https://www.youtube.com/channel/UCcqvmc1uRblenC_-z2pizfA" target="_blank">Metapod Para Presidente</a>.</p>
+    
+    <video id="v1" controls src="https://files.catbox.moe/hoprf2.mp4"></video>
+    
+    <section id="chistoso">
+      <div id="s1" class="wrapper">
+      
+        <p id="joke"></p>
+        <button id="btn" type="button" class="btn btn-primary">Bromita</button>
+        
+    </div>
+
+    </section>
+
+
+ 
+{% endblock %}

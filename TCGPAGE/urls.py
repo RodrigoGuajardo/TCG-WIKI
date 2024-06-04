@@ -1,6 +1,7 @@
 
 from django.urls import path
 from .views import *
+from django.contrib.auth.views import LoginView
 
 urlpatterns = [
    
@@ -10,6 +11,6 @@ urlpatterns = [
     path('yugi',yugi, name="yugi"),
     path('magic',magic, name="magic"),
     path('lol',lol, name="lol"),
-    path('login',login, name="login"),
+    path('login',LoginView.as_view(template_name='TCGPAGE/login.html'), name="login"),
     path('carro',carro, name="carro")
 ]

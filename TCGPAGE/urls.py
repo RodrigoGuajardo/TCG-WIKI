@@ -12,5 +12,7 @@ urlpatterns = [
     path('magic',magic, name="magic"),
     path('lol',lol, name="lol"),
     path('login',LoginView.as_view(template_name='TCGPAGE/login.html'), name="login"),
-    path('carro',carro, name="carro")
+    path('carro',carro, name="carro"),
+    path('borrar',borrarSecion, name="borrar"),
+    path('addToCar/<id>',addToCart,name="addToCar")
 ]

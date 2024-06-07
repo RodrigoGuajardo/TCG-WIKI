@@ -13,12 +13,29 @@
         
         <fieldset id="field">
           
-            <div id="c1" class="p-2"><img id="img1" src="Images/Mazo-dinastia-del-dragon_1024x1024@2x.webp" alt="mazo dragon myl">Mazo dinastia del  Dragon.<br>Precio : $7.000</div>  
-          
-            <div id="c1" class="p-2"><img id="img1" src="Images/caja 24 sobres myl f.png" alt="caja spbre x24 furia">Caja sobre MyL Furia x24 <br>Precio : $30000</div>
-          
-            <div id="c1" class="p-2"><img id="img1" src="Images/mazo estructura yugi.png" alt="mazo yugi">Mazo estructura Yu Gi Muto <br>Precio : $16990</div>
-            <div id="a1">Total a Pagar : $53990</div>
+          <table>
+              <thead>
+                <th>id</th>
+                <th>nombre</th>
+                <th>imagen</th>
+                <th>precio</th>
+                <th>cantidad</th>
+
+
+              </thead>
+              <tbody>
+                {% for item in request.session.carro %}
+
+                <tr>
+                  <td>{{item.id}}</td>
+                  <td><a href="{% url 'delToCar' %}">Eliminar</a></td>
+                </tr>
+              </tbody>
+
+
+          </table>
+
+
         </fieldset>
 
         <!-- Button trigger modal -->
@@ -39,7 +56,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="{% url 'borrarSecion' %}">Eliminar</a></button>
       </div>
     </div>
   </div>

@@ -229,22 +229,22 @@ let articulosYugi = [
     {
         "nombre":"Mazo estructura Yugi Muto",
         "precio":14990,
-        "imagen":"Images/mazo-estructura-yugi.webp"
+        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
     },
     {
         "nombre":"Caja sobres x24 Yu-Gi-Oh",
         "precio":34990,
-        "imagen":"Images/caja-sobre-yugi.webp"
+        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
     },
     {
-        "nombre":"Mazo Dragon balnco de ojos azules",
+        "nombre":"Mazo Dragon blanco de ojos azules",
         "precio":99990,
-        "imagen":"Images/mazo-dragon-blanco.webp"
+        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
     },
     {
         "nombre":"Sobre Yu-Gi-Oh",
         "precio":3990,
-        "imagen":"Images/sobre-yu-gi-oh.webp"
+        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
     }
     
 ]

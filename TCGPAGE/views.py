@@ -6,14 +6,14 @@ def home(request):
     return render(request,'TCGPAGE/index.html')
 
 def myl(request):
-
-    return render(request,'TCGPAGE/MyL.html')
+    prodMYL = ProductosMYL.objects.all()
+    return render(request,'TCGPAGE/MyL.html',{'prodMYL':prodMYL})
 
 def yugi(request):
     return render(request,'TCGPAGE/YuGiOh.html')
 
 def poke(request):
-    pokemon = Productos.objects.all()
+   
     return render(request,'TCGPAGE/Pokemon.html')
 
 
@@ -35,7 +35,7 @@ def borrarSecion(request):
 
 
 def addToCart(request, id):
-    producto = Productos.objects.get(id=id)
+    producto = ProductosMYL.objects.get(id=id)
     carro = request.session.get("carro", [])
     for item in carro:
         if item["id"]==id:
@@ -43,7 +43,7 @@ def addToCart(request, id):
             item["total"] = item["cantidad"] * item["precio"]
             break
         else:
-            carro.append({"id":id, "nombre":Productos.codigo, "cantidad":1, "total": Productos.precio})
+            carro.append({"id":id, "nombre":ProductosMYL.id_myl, "cantidad":1, "total": ProductosMYL.Precio})
     request.session["carro"] = carro
 
     print(carro)

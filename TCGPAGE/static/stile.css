@@ -117,6 +117,12 @@ nav > h1{
     display: flex;
     justify-content: center;
 }
+#s33{
+    background-color: #6D00AC;
+    font-size: 1.4rem;
+    
+    margin: 20%;
+}
 #s4{
     margin-top: 5%;
     font-size: 1.4rem;

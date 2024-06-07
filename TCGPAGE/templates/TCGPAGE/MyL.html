@@ -15,7 +15,38 @@
 
         <p id="s1">Algunos de los productos que vendemos : </p>
         
+        <div class="row">
+
+
+
+          {% for cartamyl in prodMYL %}
+
+        
+          <div class="col-sm-4 mb-4 mb-sm-0">
+  
+            <div id="persoLOL"  class="card" style="width: 18rem;">
+              <img src="{{ cartamyl.imagen }}" class="card-img-top" alt="{{ cartamyl.nombre }}">
+              <div class="card-body">
+                <h5 id="s1" class="card-title">{{ cartamyl.nombre }}</h5>
+                <p id="s1" class="card-text">Precio : {{ cartamyl.precio }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+  
+          </div>
+  
+        
+  
+          {% endfor %}
+        </div>
+
+
+        <h2 id="s1" ><br><br><br><br>Productos Proximos <br><br><br><br></h2>
+
         <section id="productosMYL">
+
+
+
 
         </section>
 

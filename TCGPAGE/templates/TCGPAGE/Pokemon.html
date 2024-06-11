@@ -15,18 +15,35 @@
        y fue publicado por Media Factory. A lo largo de su historia, ha sido traducido y distribuido por diferentes entidades,
         como Wizards of the Coast y The Pokémon Company.<br><br>A continuacion algunos productos que vendemos : </p>
 
-      <section id="productosPOKE">
-        {% for pokecarta in productospoke %}
-        <div class="pokemon" style="width: 18rem;">
-          <img src="{{pokecarta.imagen}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Carta 1</h5>
-            <p class="card-text">{{pokecarta.precio}}</p>
-            <a href="{% url 'addToCar' item.id %}" class="btn btn-primary">Añadir al carro</a>
-          </div>
-        </div>
+        <div class="row">
 
-        {% endfor %}
+          {% for cartaPoke in prodPoke %}
+    
+            
+          <div class="col-sm-4 mb-4 mb-sm-0">
+      
+            <div id="persoLOL"  class="card" style="width: 18rem;">
+              <img src="{{ cartaPoke.imagen }}" class="card-img-top" alt="{{ cartaPoke.nombre }}">
+              <div class="card-body">
+                <h5 id="s1" class="card-title">{{ cartaPoke.nombre }}</h5>
+                <p id="s1" class="card-text">Precio : {{ cartaPoke.precio }}</p>
+                <a href="#" class="btn btn-primary">Añadir al Carro</a>
+              </div>
+            </div>
+      
+          </div>
+      
+        
+      
+          {% endfor %}
+      
+    
+        </div>
+    
+        <h2 id="s1" ><br><br><br><br>Productos Proximos <br><br><br><br></h2>
+        
+      <section id="productosPOKE">
+
       </section>
       
 

@@ -14,12 +14,13 @@ def yugi(request):
     return render(request,'TCGPAGE/YuGiOh.html',{'prodYugi':prodYugi})
 
 def poke(request):
-   
-    return render(request,'TCGPAGE/Pokemon.html')
+    prodPoke = ProductosPoke.objects.all()
+    return render(request,'TCGPAGE/Pokemon.html',{'prodPoke':prodPoke})
 
 
 def magic(request):
-    return render(request,'TCGPAGE/MAgic-Gathering.html')
+    prodMagic = ProductosMagic.objects.all()
+    return render(request,'TCGPAGE/MAgic-Gathering.html',{'prodMagic':prodMagic})
 
 def lol(request):
     return render(request,'TCGPAGE/LoL.html')

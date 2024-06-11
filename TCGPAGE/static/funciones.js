@@ -71,24 +71,24 @@ let cartasPoke = [
     {
         "nombre":"V-Batle deck Victini",
         "precio":"24990",
-        "imagen":"Images/mazo-pokemon.webp"
+        "imagen":"https://i.postimg.cc/jqF8JDhR/mazo-pokemon.webp"
 
     },
     {
         "nombre":"V-Batle deck Gardevoir",
         "precio":"24990",
-        "imagen":"Images/mazo-gardevoir.webp"
+        "imagen":"https://i.postimg.cc/jqF8JDhR/mazo-pokemon.webp"
     },
     {
         "nombre":"V-Batle deck Victini & Gardevoir",
         "precio":"61990",
-        "imagen":"Images/pack-pokemon-victini-y-gardevoir.webp"
+        "imagen":"https://i.postimg.cc/Nj1bVpv0/pack-pokemon-victini-y-gardevoir.webp"
 
     },
     {
         "nombre":"Caja Pokemon 151 Ultra-Premium Collection",
         "precio":"149990",
-        "imagen":"https://thirdimpact.cl/wp-content/uploads/2023/06/PokemonScarletViolet151UltraPremiumCollection-510x360.pngs"
+        "imagen":"https://i.postimg.cc/VsDxZsBh/caja-pokemon-151-1-11zon.webp"
     }
 
 
@@ -127,23 +127,23 @@ let cartasMYL = [
     {
         "nombre":"Sobre Mitos y Leyendas Furia",
         "precio":"2000",
-        "imagen":"Images/sobre-11-cartas-myl.webp"
+        "imagen":"https://i.postimg.cc/KYxQyBmD/sobre-11-cartas-myl.webp"
 
     },
     {
         "nombre":"Caja sobres Furia x24",
         "precio":"30000",
-        "imagen":"Images/caja-24-sobres-myl-f.webp"
+        "imagen":"https://i.postimg.cc/Yq0J5cdC/caja-24-sobres-myl-f.webp"
     },
     {
         "nombre":"Caja sobre Primer Bloque x24",
         "precio":"35000",
-        "imagen":"Images/caja sobre primer bloque.webp"
+        "imagen":"https://i.postimg.cc/c4zVZDzM/caja-sobre-primer-bloque.webp"
     },
     {
         "nombre":"Mqzo Dinastia del Dragon",
         "precio":"14990",
-        "imagen":"Images/Mazo-dinastia-del-dragon_1024x1024@2x.webp"
+        "imagen":"https://i.postimg.cc/X7BsKn2d/Mazo-dinastia-del-dragon-1024x1024-2x.webp"
     }
 
 ]
@@ -181,7 +181,7 @@ let items = [
     {
         "nombre":"MTG BUNDLE: Modern Horizons 3 - Ingles",
         "precio":99990,
-        "imagen":"Images/magic_modrn_horizons.png"
+        "imagen":"https://i.postimg.cc/1tRWD6T3/magic-modrn-horizons.png"
     },
     {
         "nombre":"MTG Mazo Inicial Commander - Triunfo de las Fichas",
@@ -229,22 +229,22 @@ let articulosYugi = [
     {
         "nombre":"Mazo estructura Yugi Muto",
         "precio":14990,
-        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
+        "imagen":"https://i.postimg.cc/d3L4xFJM/mazo-estructura-yugi.webp"
     },
     {
         "nombre":"Caja sobres x24 Yu-Gi-Oh",
         "precio":34990,
-        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
+        "imagen":"https://i.postimg.cc/DwbRzrkV/caja-sobre-yugi.webp"
     },
     {
         "nombre":"Mazo Dragon blanco de ojos azules",
         "precio":99990,
-        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
+        "imagen":"https://i.postimg.cc/63HMcqJL/mazo-dragon-blanco.webp"
     },
     {
         "nombre":"Sobre Yu-Gi-Oh",
         "precio":3990,
-        "imagen":"https://dojiw2m9tvv09.cloudfront.net/68889/product/X_displayleyendaspe2023-2268x-17713.png?261&time=1717784403"
+        "imagen":"https://i.postimg.cc/3RwBkh4y/sobre-yu-gi-oh.webp"
     }
     
 ]

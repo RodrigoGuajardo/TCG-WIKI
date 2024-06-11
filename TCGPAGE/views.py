@@ -10,7 +10,8 @@ def myl(request):
     return render(request,'TCGPAGE/MyL.html',{'prodMYL':prodMYL})
 
 def yugi(request):
-    return render(request,'TCGPAGE/YuGiOh.html')
+    prodYugi =ProductosYugi.objects.all()
+    return render(request,'TCGPAGE/YuGiOh.html',{'prodYugi':prodYugi})
 
 def poke(request):
    

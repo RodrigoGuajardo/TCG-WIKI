@@ -124,12 +124,12 @@ function cargarPOKE(){
 
 
 let cartasMYL = [
+ 
     {
-        
+        "nombre":"{{ cartamyl.nombre }}",
         "precio":"{{ cartamyl.precio }}",
-
+        "imagen":"{{ cartamyl.imagen }}"
     },
-    
 
 ]
 
@@ -142,7 +142,14 @@ function cargarMYL(){
         for(let item of cartasMYL){
             let producto = document.createElement("div");
             producto.classList.add("producto");
-
+            let imagen = document.createElement("div");
+            imagen.classList.add("imagen");
+            imagen.style.backgroundImage = 'url('+ item.imagen +')';
+            producto.appendChild(imagen);
+            let nombre = document.createElement("div");
+            nombre.classList.add("nombre");
+            nombre.innerHTML = item.nombre;
+            producto.appendChild(nombre);
             let precio = document.createElement("div");
             precio.classList.add("precio");
             precio.innerHTML = "$"+item.precio + " (USD "+ (item.precio/dolar).toFixed(1) +")";

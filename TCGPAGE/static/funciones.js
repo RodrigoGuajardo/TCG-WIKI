@@ -77,7 +77,7 @@ let cartasPoke = [
     {
         "nombre":"V-Batle deck Gardevoir",
         "precio":"24990",
-        "imagen":"https://i.postimg.cc/jqF8JDhR/mazo-pokemon.webp"
+        "imagen":"https://i.postimg.cc/6qgYsPQ8/mazo-gardevoir.webp"
     },
     {
         "nombre":"V-Batle deck Victini & Gardevoir",
@@ -125,26 +125,11 @@ function cargarPOKE(){
 
 let cartasMYL = [
     {
-        "nombre":"Sobre Mitos y Leyendas Furia",
-        "precio":"2000",
-        "imagen":"https://i.postimg.cc/KYxQyBmD/sobre-11-cartas-myl.webp"
+        
+        "precio":"{{ cartamyl.precio }}",
 
     },
-    {
-        "nombre":"Caja sobres Furia x24",
-        "precio":"30000",
-        "imagen":"https://i.postimg.cc/Yq0J5cdC/caja-24-sobres-myl-f.webp"
-    },
-    {
-        "nombre":"Caja sobre Primer Bloque x24",
-        "precio":"35000",
-        "imagen":"https://i.postimg.cc/c4zVZDzM/caja-sobre-primer-bloque.webp"
-    },
-    {
-        "nombre":"Mqzo Dinastia del Dragon",
-        "precio":"14990",
-        "imagen":"https://i.postimg.cc/X7BsKn2d/Mazo-dinastia-del-dragon-1024x1024-2x.webp"
-    }
+    
 
 ]
 
@@ -157,14 +142,7 @@ function cargarMYL(){
         for(let item of cartasMYL){
             let producto = document.createElement("div");
             producto.classList.add("producto");
-            let imagen = document.createElement("div");
-            imagen.classList.add("imagen");
-            imagen.style.backgroundImage = 'url('+ item.imagen +')';
-            producto.appendChild(imagen);
-            let nombre = document.createElement("div");
-            nombre.classList.add("nombre");
-            nombre.innerHTML = item.nombre;
-            producto.appendChild(nombre);
+
             let precio = document.createElement("div");
             precio.classList.add("precio");
             precio.innerHTML = "$"+item.precio + " (USD "+ (item.precio/dolar).toFixed(1) +")";

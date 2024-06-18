@@ -1,10 +1,14 @@
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+from django.contrib.auth.views import logout_then_login
 
 # Create your views here.
 def home(request):
     return render(request,'TCGPAGE/index.html')
+
+def logout(request):
+    return logout_then_login(request, login_url="home")
 
 def myl(request):
     prodMYL = ProductosMYL.objects.all()
@@ -74,4 +78,4 @@ def registro(request):
             return redirect(to= "login")
     else:
         registro = Registro()
-    return render(request, 'registro.html', {"form":registro})
+    return render(request, 'TCGPAGE/registro.html', {"form":registro})

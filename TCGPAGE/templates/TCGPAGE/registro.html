@@ -5,12 +5,12 @@
 {% block content %}
         <section >
         
-            <h1 >Iniciar Secion</h1>
+            <h1 >Registro</h1>
 
-        <form  action="" method="post" id="login">
+        <form  action="" method="post" id="registro">
             {% csrf_token %}
             {{ form | crispy}}
-            <button type="submit"  class="btn btn-primary">Ingresar</button>
+            <button type="submit"  class="btn btn-primary">Registro</button>
             
         </form>
 

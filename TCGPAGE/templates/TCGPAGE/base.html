@@ -36,9 +36,27 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="{% url 'lol' %}">Extras</a></li>
                 </ul>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar Secion</a>
+                <li>
+                  <div id="usuario">
+                    {% if user.is_authenticated %}
+                      {{ user.username }}
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-danger"><a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Cerrar Secion</a></button>
+                        
+                      </li >
+                    {% else %}
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar Secion</a>
+                    </li >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registro</a>
+                    </li>
+  
+                    {% endif %}
+  
+                  </div>
                 </li>
+                
                 <li class="nav-item">
                   <a id="link-barra" class="nav-link" href="{% url 'carro' %}"><img id="carrocompras" src="https://files.catbox.moe/k5ioma.png" alt="Carrito de compras png"></a>
                 </li>
@@ -46,7 +64,9 @@
           </div>
         </div>
       </nav>
-    </nav>{% block head %}
+    </nav>
+    
+    {% block head %}
 
 
 

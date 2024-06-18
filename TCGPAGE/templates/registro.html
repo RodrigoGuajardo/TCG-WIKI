@@ -1,0 +1,10 @@
+{% extends 'TCGPAGE/base.html'%}
+
+{% block content %}
+    <h1>Registro</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Registro</button>
+    </form>
+{% endblock %}

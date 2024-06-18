@@ -6,6 +6,7 @@ from django.contrib.auth.views import LoginView
 urlpatterns = [
    
     path('', home, name="home"),
+    path('registro', registro, name="registro"),
      path('myl', myl, name="myl"),
      path('poke',poke, name="poke"),
     path('yugi',yugi, name="yugi"),

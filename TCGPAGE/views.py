@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import *
+from .forms import *
 
 # Create your views here.
 def home(request):
@@ -63,3 +64,14 @@ def delToCar(request,id):
             break
         request.session["carro"] = carro
         return redirect(to="carro")
+    
+
+def registro(request):
+    if request.method == "POST":
+        registro = Registro(request.POST)
+        if registro.is_valid():
+            registro.save()
+            return redirect(to= "login")
+    else:
+        registro = Registro()
+    return render(request, 'registro.html', {"form":registro})

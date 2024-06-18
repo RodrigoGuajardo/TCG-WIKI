@@ -4,16 +4,18 @@
 }
 
 body{
-    background-image: url('Images/R.jpg');
+    background-image: url('https://i.postimg.cc/Bq9Vg1f6/R.jpg') ;
     background-attachment: fixed;
     color:black;
     background-size:cover;
     
     
 }
+
 #l1{
     margin: 250px;
 }
+
 #Titulo{
     font-weight: bolder;
     color: white;
@@ -285,11 +287,10 @@ nav > h1{
     color: white;
     width: 40%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 5px;
-    margin: 40px 0px;
-
-
+    margin: 20%;
 }
 
 #joke{

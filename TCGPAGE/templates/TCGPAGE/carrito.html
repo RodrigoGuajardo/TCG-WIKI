@@ -1,9 +1,7 @@
 {% extends 'TCGPAGE/base.html' %} 
-{% load static%}
 
-{% block head %}
-{% static 'funciones.js' %}
-{% endblock %}
+
+
 
 {% block content %}
         
@@ -27,9 +25,10 @@
                 {% for item in request.session.carro %}
 
                 <tr>
-                  <td>{{item.id}}</td>
+                  <td>{{item.idmyl}}</td>
                   <td><a href="{% url 'delToCar' %}">Eliminar</a></td>
                 </tr>
+                {% endfor %}
               </tbody>
 
 

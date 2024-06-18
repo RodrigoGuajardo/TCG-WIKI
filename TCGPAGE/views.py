@@ -41,22 +41,21 @@ def borrarSecion(request):
     return redirect(to="carro")
 
 
-def addToCart(request, id):
-    producto = ProductosMYL.objects.get(id=id)
-    carro = request.session.get("carro", [])
+def addToMyl(request, id_myl):
+    prodMYL = prodMYL.objects.get(id = id_myl)
+    carro= request.session.get("carro",[])
     for item in carro:
-        if item["id"]==id:
-            item [ "cantidad"] +=1
-            item["total"] = item["cantidad"] * item["precio"]
+        if item ["ID"]==id:
+            item ["cantidad"] +=1
+            item ["total"] = item ["cantidad"] * item["precio"]
             break
         else:
             carro.append({"id":id, "nombre":ProductosMYL.id_myl, "cantidad":1, "total": ProductosMYL.Precio})
-    request.session["carro"] = carro
-
+            request.session["carro"] = carro
     print(carro)
     return redirect(to="home")
 
-def delToCar(request,id):
+def delToCar(request,id_myl):
     carro = request.session.get("carro", [])
     for item in carro:
         if item["cantidad"]>1:
@@ -71,11 +70,6 @@ def delToCar(request,id):
     
 
 def registro(request):
-    if request.method == "POST":
-        registro = Registro(request.POST)
-        if registro.is_valid():
-            registro.save()
-            return redirect(to= "login")
-    else:
-        registro = Registro()
+    
+    registro = Registro()
     return render(request, 'TCGPAGE/registro.html', {"form":registro})

@@ -55,7 +55,7 @@ def addToMyl(request, id_myl):
     print(carro)
     return redirect(to="home")
 
-def delToCar(request,id_myl):
+def delMylToCar(request,id_myl):
     carro = request.session.get("carro", [])
     for item in carro:
         if item["cantidad"]>1:

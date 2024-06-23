@@ -96,7 +96,7 @@ nav > h1{
     color: white;}
 
 #s1{
-
+    margin-top: 2%;
     font-size: 1.4rem;
     color: white;
     margin-left: 20%;
@@ -287,9 +287,8 @@ nav > h1{
     color: white;
     width: 40%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     row-gap: 5px;
+     flex-direction: column;
     margin: 20%;
 }
 

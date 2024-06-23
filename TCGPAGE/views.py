@@ -34,33 +34,36 @@ def login(request):
     return render(request,'TCGPAGE/login.html')
 
 def carro(request):
-    return render(request,'TCGPAGE/carrito.html')
+    return render(request,'TCGPAGE/carrito.html', {"carro":request.session.get("carro",[])} )
 
 def borrarSecion(request):
     request.session.flush()
     return redirect(to="carro")
 
-
+                                                                                                                                       
 def addToMyl(request, id_myl):
-    prodMYL = prodMYL.objects.get(id = id_myl)
+    prodMYL = ProductosMYL.objects.get(id_myl=id_myl)
     carro= request.session.get("carro",[])
+    
     for item in carro:
-        if item ["ID"]==id:
-            item ["cantidad"] +=1
-            item ["total"] = item ["cantidad"] * item["precio"]
+        if item [0]==id_myl:
+            item [4] +=1
+            item [5] = item [4] * item[3]
+            
             break
-        else:
-            carro.append({"id":id, "nombre":ProductosMYL.id_myl, "cantidad":1, "total": ProductosMYL.Precio})
-            request.session["carro"] = carro
+    else:
+        carro.append([id_myl, prodMYL.nombre, prodMYL.imagen, prodMYL.precio, 1, prodMYL.precio])
+    request.session["carro"] = carro
     print(carro)
-    return redirect(to="home")
+    return redirect(to="myl")
+
 
 def delMylToCar(request,id_myl):
     carro = request.session.get("carro", [])
     for item in carro:
-        if item["cantidad"]>1:
-            item [ "cantidad"] -=1
-            item["total"] = item["cantidad"] * item["precio"]
+        if item[5]>1:
+            item [5] -=1
+            item[6] = item[5] * item[4]
             
         else:
             carro.remove(item)

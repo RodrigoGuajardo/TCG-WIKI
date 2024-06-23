@@ -26,7 +26,7 @@
               <div class="card-body">
                 <h5 id="s1" class="card-title">{{ cartamyl.id_myl }}  {{ cartamyl.nombre }}</h5>
                 <p id="s1" class="card-text">Precio : {{ cartamyl.precio }}</p>
-                <a href="#" class="btn btn-primary">Añadir al Carro</a>
+                <a href="{% url 'addToMyl' cartamyl.id_myl %}" class="btn btn-primary">Añadir al Carro</a>
               </div>
             </div>
   

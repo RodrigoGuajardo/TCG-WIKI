@@ -31,6 +31,13 @@ nav > h1{
     color: white;
 }
 
+#tabla1{
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
 #a1{
 
     font-size: 1.4rem;
@@ -138,7 +145,10 @@ nav > h1{
     margin-bottom: 5%;
     width: 55%;
 }
+#t1{
+    width: 20px;
 
+}
 #x1{
     font-size: 1.4rem;
     color: white;
@@ -254,6 +264,11 @@ nav > h1{
 }
 #mail{
     margin-left: 50px;
+}
+
+thead{
+    color: #ffffff;
+    text-align: center;
 }
 
 .correct{

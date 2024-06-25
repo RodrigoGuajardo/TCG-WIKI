@@ -15,7 +15,8 @@ urlpatterns = [
     path('login',LoginView.as_view(template_name='TCGPAGE/login.html'), name="login"),
     path('carro',carro, name="carro"),
     path('borrarSecion',borrarSecion, name="borrarSecion"),
-    path('addToMyl/<id_myl>',addToMyl,name="addToMyl"),
-    path('delToCar',delToCar,name="delToCar"),
+    path('addToCar/<id>',addToCar,name="addToCar"),
+    path('productos',productos,name="productos"),
+    path('delToCar/<id>',delToCar,name="delToCar"),
     path('logout',logout,name="logout"),
 ]

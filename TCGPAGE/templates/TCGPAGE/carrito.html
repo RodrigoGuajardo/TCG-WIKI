@@ -40,8 +40,10 @@
               </tbody>
 
 
-          </table>
-
+          </table>  
+          {% if not carro %}
+            <h1 id="s1">El carro esta Vacio.</h1>
+          {% endif %}
 
         <!-- Button trigger modal -->
 <button id="B1" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">

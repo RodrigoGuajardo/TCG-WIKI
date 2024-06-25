@@ -13,27 +13,6 @@
             La esencia del juego radica en reunir mitos y leyendas de diversas culturas alrededor del mundo. Los jugadores emprenden un épico viaje a través de diferentes épocas y lugares, desde la mitología egipcia hasta los celtas, Roma, Japón e incluso momentos históricos como la Primera Guerra Mundial, la Revolución Mexicana, la Conquista de América y la propia historia de Chile.<br><br>
             A pesar de la quiebra de Salo en 2010, el juego retomó su actividad en 2014 bajo la compañía Klu!, perteneciente a Fenix Entertainment S.P.A.. Así, Mitos y Leyendas continuó cautivando a los jugadores con su rica variedad de leyendas y su fascinante universo 🃏✨.</p>
 
-
-        <p id="s1">Algunos de los productos que vendemos : </p>
-        
-        <div class="row">
-
-          {% for cartamyl in prodMYL %}
-          <div class="col-sm-4 mb-4 mb-sm-0">
-  
-            <div id="persoLOL"  class="card" style="width: 18rem;">
-              <img src="{{ cartamyl.imagen }}" class="card-img-top" alt="{{ cartamyl.nombre }}">
-              <div class="card-body">
-                <h5 id="s1" class="card-title">{{ cartamyl.id_myl }}  {{ cartamyl.nombre }}</h5>
-                <p id="s1" class="card-text">Precio : {{ cartamyl.precio }}</p>
-                <a href="{% url 'addToMyl' cartamyl.id_myl %}" class="btn btn-primary">Añadir al Carro</a>
-              </div>
-            </div>
-  
-          </div>
-          {% endfor %}
-        </div>
-
         <h2 id="s1" ><br><br><br><br>Productos Proximos <br><br><br><br></h2>
 
         <section id="productosMYL">

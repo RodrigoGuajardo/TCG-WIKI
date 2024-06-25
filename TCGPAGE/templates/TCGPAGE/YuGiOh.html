@@ -13,28 +13,7 @@
     <br><br>
     A Continuacion algunos de los productos que vendemos :
     </p>
-    
-    <div class="row">
-
-      {% for cartaYugi in prodYugi %}
-
-        
-      <div class="col-sm-4 mb-4 mb-sm-0">
   
-        <div id="persoLOL"  class="card" style="width: 18rem;">
-          <img src="{{ cartaYugi.imagen }}" class="card-img-top" alt="{{ cartaYugi.nombre }}">
-          <div class="card-body">
-            <h5 id="s1" class="card-title">{{ cartaYugi.nombre }}</h5>
-            <p id="s1" class="card-text">Precio : {{ cartaYugi.precio }}</p>
-            <a href="#" class="btn btn-primary">Añadir al Carro</a>
-          </div>
-        </div>
-  
-      </div>
-  
-    
-  
-      {% endfor %}
   
 
     </div>

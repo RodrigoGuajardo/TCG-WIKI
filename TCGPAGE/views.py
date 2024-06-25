@@ -54,16 +54,18 @@ def addToMyl(request, id_myl):
     else:
         carro.append([id_myl, prodMYL.nombre, prodMYL.imagen, prodMYL.precio, 1, prodMYL.precio])
     request.session["carro"] = carro
-    print(carro)
+    
     return redirect(to="myl")
 
 
-def delMylToCar(request,id_myl):
+
+def delToCar(request,id_myl):
     carro = request.session.get("carro", [])
     for item in carro:
-        if item[5]>1:
-            item [5] -=1
-            item[6] = item[5] * item[4]
+        
+        if item[4]>=1:
+            item [4] -=1
+            item[5]= item[4] * item[3]
             
         else:
             carro.remove(item)

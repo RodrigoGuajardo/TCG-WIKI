@@ -34,6 +34,7 @@ nav > h1{
 #tabla1{
     color: white;
     font-size: 1.2rem;
+    width: 90%;    
 
 }
 
@@ -145,8 +146,8 @@ nav > h1{
     margin-bottom: 5%;
     width: 55%;
 }
-#t1{
-    width: 20px;
+#t11{
+    width: 90px;
 
 }
 #x1{
@@ -264,6 +265,10 @@ nav > h1{
 }
 #mail{
     margin-left: 50px;
+}
+
+table{
+    width: 90%;
 }
 
 thead{

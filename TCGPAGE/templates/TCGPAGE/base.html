@@ -43,7 +43,9 @@
                   
                   <div id="usuario">
                     {% if user.is_authenticated %}
-                      {{ user.username }}
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">{{ user.username }}</a>
+                      </li >
                       <li class="nav-item">
                         <button type="button" class="btn btn-danger"><a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Cerrar Secion</a></button>
                       </li >

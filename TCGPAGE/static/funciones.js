@@ -126,11 +126,25 @@ function cargarPOKE(){
 let cartasMYL = [
  
     {
-        "nombre":"{{ cartamyl.nombre }}",
-        "precio":"{{ cartamyl.precio }}",
-        "imagen":"{{ cartamyl.imagen }}"
+        "nombre":"Caja 24 Sobres Mitos Y Leyendas Furia",
+        "precio":"30000",
+        "imagen":"https://i.postimg.cc/Yq0J5cdC/caja-24-sobres-myl-f.webp"
     },
-
+    {
+        "nombre":"Caja Sobre Mitos Y Leyendas Primer Bloque",
+        "precio":"35000",
+        "imagen":"https://i.postimg.cc/c4zVZDzM/caja-sobre-primer-bloque.webp"
+    },
+    {
+        "nombre":"Sobre Mitos Y Leyendas Furia",
+        "precio":"2000",
+        "imagen":"https://i.postimg.cc/KYxQyBmD/sobre-11-cartas-myl.webp"
+    },
+    {
+        "nombre":"Sobre Mitos Y Leyendas Primer Bloque",
+        "precio":"2000",
+        "imagen":"https://th.bing.com/th?id=OIF.jKUOU3UHIQRxcV%2bAS8xY%2fA&rs=1&pid=ImgDetMain"
+    },
 ]
 
 function cargarMYL(){

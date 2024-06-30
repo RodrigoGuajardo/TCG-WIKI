@@ -15,21 +15,18 @@ def logout(request):
     return logout_then_login(request, login_url="home")
 
 def myl(request):
-    prodMYL = ProductoMYL.objects.all()
-    return render(request,'TCGPAGE/MyL.html',{'prodMYL':prodMYL})
+
+    return render(request,'TCGPAGE/MyL.html')
 
 def yugi(request):
-    prodYugi =ProductoYugi.objects.all()
-    return render(request,'TCGPAGE/YuGiOh.html',{'prodYugi':prodYugi})
+   return render(request,'TCGPAGE/YuGiOh.html')
 
 def poke(request):
-    prodPoke = ProductoPoke.objects.all()
-    return render(request,'TCGPAGE/Pokemon.html',{'prodPoke':prodPoke})
+    return render(request,'TCGPAGE/Pokemon.html')
 
 
 def magic(request):
-    prodMagic = ProductoMagic.objects.all()
-    return render(request,'TCGPAGE/MAgic-Gathering.html',{'prodMagic':prodMagic})
+    return render(request,'TCGPAGE/MAgic-Gathering.html')
 
 def lol(request):
     return render(request,'TCGPAGE/LoL.html')
@@ -57,8 +54,8 @@ def delToCar(request, id):
                 carro.remove(item)
         else:
             break
-        request.session["carro"] = carro
-        return redirect(to="carro")
+    request.session["carro"] = carro
+    return redirect(to="carro")
     
                                                                                                                                        
 def addToCar(request, id):

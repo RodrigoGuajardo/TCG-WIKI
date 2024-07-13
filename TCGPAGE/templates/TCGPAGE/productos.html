@@ -2,9 +2,7 @@
 {% extends 'TCGPAGE/base.html' %} 
 {% load static%}
 
-{% block head %}
-{% static 'funciones.js' %}
-{% endblock %}
+
 
 {% block content %}
 
@@ -13,7 +11,7 @@
 
 <div class="row">
 
-    {% for item in prodGlob %}
+    {% for item in prodVar %}
     <div class="col-sm-4 mb-4 mb-sm-0">
 
       <div id="persoLOL"  class="card" style="width: 18rem;">

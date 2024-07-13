@@ -18,5 +18,5 @@ urlpatterns = [
     path('addToCar/<id>',addToCar,name="addToCar"),
     path('productos',productos,name="productos"),
     path('delToCar/<id>',delToCar,name="delToCar"),
-    path('logout',logout,name="logout"),
+    path('cerrarssecion',cerrarssecion,name="cerrarssecion"),
 ]

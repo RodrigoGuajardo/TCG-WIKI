@@ -8,14 +8,11 @@ def home(request):
     return render(request,'TCGPAGE/index.html')
 
 def productos(request):
-    prodVar = ProductosVarios.objects.all()
-    return render(request,'TCGPAGE/productos.html',{'prodVar':prodVar})
+    prodGlob = ProductosGlobales.objects.all()
+    return render(request,'TCGPAGE/productos.html',{'prodGlob':prodGlob})
 
-def cerrarssecion(request):
-    request.session.flush()
-    return redirect(to="home")
-    
-
+def logout(request):
+    return logout_then_login(request, login_url="home")
 
 def myl(request):
 
@@ -62,7 +59,7 @@ def delToCar(request, id):
     
                                                                                                                                        
 def addToCar(request, id):
-    prodGlob = ProductosVarios.objects.get(id=id)
+    prodGlob = ProductosGlobales.objects.get(id=id)
     carro= request.session.get("carro",[])
     
     for item in carro:
@@ -80,12 +77,6 @@ def addToCar(request, id):
 
 
 def registro(request):
-    if request.method == "POST":
-        registro = Registro(request.POST)
-        if registro.is_valid():
-            registro.save()
-            return redirect(to="home")
-        
-    else:
-        registro = Registro()
+    
+    registro = Registro()
     return render(request, 'TCGPAGE/registro.html', {"form":registro})

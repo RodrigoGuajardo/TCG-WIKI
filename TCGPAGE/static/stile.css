@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('https://i.postimg.cc/Bq9Vg1f6/R.jpg') ;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/539/814/non_2x/light-purple-background-with-rectangles-colorful-illustration-with-gradient-rectangles-and-squares-pattern-for-websites-landing-pages-vector.jpg') ;
     background-attachment: fixed;
     color:black;
     background-size:cover;
@@ -147,7 +147,7 @@ nav > h1{
     width: 55%;
 }
 #t11{
-    width: 90px;
+    width: 200px;
 
 }
 #x1{
@@ -292,6 +292,7 @@ thead{
 #link-barra{
     display: flex;
     justify-content: flex-end;
+    width: 20px;
     
     
 }
@@ -413,3 +414,22 @@ p{
     align-items: center;
     justify-content: center;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ae00ff;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #4f0099;
+  }
+  tr:nth-child(even) {
+    background-color: #4f0099;
+  }
+  tr:hover {
+    background-color: #4f0099;
+  }

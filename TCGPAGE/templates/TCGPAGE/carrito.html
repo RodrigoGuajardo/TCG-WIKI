@@ -8,9 +8,6 @@
         <h1 id="TP">Carrito</h1>
         <p id="a1">Productos en el Carro : </p>
         
-        
-
-          
           <table id="tabla1">
               <thead>
                 <th>ID</th>
@@ -19,7 +16,9 @@
                 <th>Precio</th>
                 <th>Cantidad</th>
                 <th>SubTotal</th>
+                <th>Total</th>
                 <th></th>
+
 
 
               </thead>
@@ -34,6 +33,7 @@
                   <td>{{item.3}}</td>
                   <td>{{item.4}}</td>
                   <td>{{item.5}}</td>
+                  <td>{{item.5}} +{{item.5}}</td>
                   <td><a href="{% url 'delToCar' item.0 %}">Eliminar</a></td>
                 </tr>
                 {% endfor %}

@@ -12,7 +12,8 @@ def productos(request):
     return render(request,'TCGPAGE/productos.html',{'prodGlob':prodGlob})
 
 def logout(request):
-    return logout_then_login(request, login_url="home")
+    request.session.flush()
+    return redirect(to="home")
 
 def myl(request):
 
@@ -76,7 +77,14 @@ def addToCar(request, id):
 
 
 
+
 def registro(request):
-    
-    registro = Registro()
+    if request.method == "POST":
+        registro = Registro(request.POST)
+        if registro.is_valid():
+            registro.save()
+            return redirect(to="home")
+        
+    else:
+        registro = Registro()
     return render(request, 'TCGPAGE/registro.html', {"form":registro})

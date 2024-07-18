@@ -1,12 +1,8 @@
 {% extends 'TCGPAGE/base.html' %} 
 
-
-
-
 {% block content %}
         
         <h1 id="TP">Carrito</h1>
-        <p id="a1">Productos en el Carro : </p>
         
           <table id="tabla1">
               <thead>
@@ -33,16 +29,25 @@
                   <td>{{item.3}}</td>
                   <td>{{item.4}}</td>
                   <td>{{item.5}}</td>
-                  <td>{{item.5}} +{{item.5}}</td>
+                  <td>{{item.6}}</td>
+                  
                   <td><a href="{% url 'delToCar' item.0 %}">Eliminar</a></td>
+
+                    
                 </tr>
                 {% endfor %}
               </tbody>
 
 
           </table>  
+
+
           {% if not carro %}
             <h1 id="s1">El carro esta Vacio.</h1>
+          {% else %}
+            
+            <h1 id="s4">Total : {{ item.6 }}</h1>  
+            
           {% endif %}
 
         <!-- Button trigger modal -->
@@ -68,7 +73,7 @@
     </div>
   </div>
 </div>
-<button id="B1" type="button" class="btn btn-primary">Ir a Pagar</button>
+<a href="{% url 'comprar' %}"><button id="B1" type="button" class="btn btn-primary">Ir a Pagar</button></a>
     <div class="container-fluid"></div>
     
 {% endblock %}

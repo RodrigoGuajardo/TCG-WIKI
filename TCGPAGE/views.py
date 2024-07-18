@@ -8,7 +8,7 @@ def home(request):
     return render(request,'TCGPAGE/index.html')
 
 def productos(request):
-    prodGlob = ProductosGlobales.objects.all()
+    prodGlob = ProductosVarios.objects.all()
     return render(request,'TCGPAGE/productos.html',{'prodGlob':prodGlob})
 
 def logout(request):
@@ -46,37 +46,58 @@ def borrarSecion(request):
 def delToCar(request, id):
     carro = request.session.get("carro", [])
     for item in carro:
-        if item[0]==id:
-            if item[4]>1:
-                item [4] -=1
-                item[5]= item[4] * item[3]
+        if item[0] == id:
+            if item[4] > 1:
+                item[4] -= 1
+                item[5] = item[4] * item[3]
                 break
             else:
                 carro.remove(item)
-        else:
-            break
+                break  # Asegúrate de romper el bucle después de eliminar el elemento
     request.session["carro"] = carro
-    return redirect(to="carro")
-    
+    return redirect("carro")
+
+
+
                                                                                                                                        
 def addToCar(request, id):
-    prodGlob = ProductosGlobales.objects.get(id=id)
+    prodGlob = ProductosVarios.objects.get(id=id)
     carro= request.session.get("carro",[])
-    
+    totalfinal =0
     for item in carro:
         if item [0]==id:
             item [4] +=1
             item [5] = item [4] * item[3]
-            
+            totalfinal += item[5]
+            item[6] = totalfinal
             break
     else:
-        carro.append([prodGlob.id, prodGlob.nombre, prodGlob.imagen, prodGlob.precio, 1, prodGlob.precio])
+        totalfinal = prodGlob.precio
+        carro.append([prodGlob.id, prodGlob.nombre, prodGlob.imagen, prodGlob.precio, 1, prodGlob.precio,totalfinal])
+
     request.session["carro"] = carro
     
     return redirect(to="productos")
 
-
-
+def comprar(request):
+    carro= request.session.get("carro",[])
+    total = 0
+    for item in carro:
+        total += item[5]
+    venta = Venta()
+    venta.cliente = request.user
+    venta.total = total
+    venta.fecha = datetime.now().date()
+    venta.save()
+    for item in carro:
+        detalle = Detalle()
+        detalle.producto = ProductosVarios.objects.get(id = item[0]) 
+        detalle.precio = item[3]
+        detalle.cantidad = item [4]
+        detalle.venta = venta
+        detalle.save()
+    return redirect(to="carro")
+    
 
 def registro(request):
     if request.method == "POST":

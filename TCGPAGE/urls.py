@@ -19,4 +19,5 @@ urlpatterns = [
     path('productos',productos,name="productos"),
     path('delToCar/<id>',delToCar,name="delToCar"),
     path('logout',logout,name="logout"),
+    path('comprar',comprar,name='comprar'),
 ]
